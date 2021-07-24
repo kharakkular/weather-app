@@ -1,0 +1,70 @@
+:root {
+  --header-font: "Poppins", sans-serif;
+  --text-font: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  font-family: inherit;
+}
+
+html {
+  font-family: var(--text-font), sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*Weather Information*/
+.weather-container {
+  text-align: center;
+}
+
+.weather-container h1 {
+  font-family: var(--header-font);
+}
+
+#temp {
+  font-size: 1.5rem;
+}
+
+/*Buttons*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form #lat {
+  margin-right: 5px;
+}
+
+form button {
+  margin-top: 5px;
+  padding: 3px 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-family: var(--text-font);
+}
